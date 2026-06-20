@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+
+        <h1>Checkout</h1>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+
+    </header>
+
+    <div class="checkout-container">
+
+        <h2>Shipping Details</h2>
+
+        <input type="text"
+               id="customerName"
+               placeholder="Enter Full Name">
+
+        <input type="text"
+               id="phoneNumber"
+               placeholder="Enter Phone Number">
+
+        <textarea
+            id="address"
+            placeholder="Enter Address">
+        </textarea>
+
+        <h3>
+            Total Amount:
+            ₹<span id="checkoutTotal">0</span>
+        </h3>
+
+        <button onclick="placeOrder()">
+            Place Order
+        </button>
+
+    </div>
+
+    <script src="js/checkout.js"></script>
+
+</body>
+</html>
